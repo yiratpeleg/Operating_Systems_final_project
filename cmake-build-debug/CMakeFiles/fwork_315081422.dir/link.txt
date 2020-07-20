@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/fwork_315081422.dir/main.c.o CMakeFiles/fwork_315081422.dir/process_layout_q.c.o  -o fwork_315081422 
