@@ -79,10 +79,16 @@
 		<Unit filename="/home/yirat/Desktop/OS-final_task/check_pid.c">
 			<Option target="fwork_315081422"/>
 		</Unit>
+		<Unit filename="/home/yirat/Desktop/OS-final_task/client.c">
+			<Option target="fwork_315081422"/>
+		</Unit>
 		<Unit filename="/home/yirat/Desktop/OS-final_task/main.c">
 			<Option target="fwork_315081422"/>
 		</Unit>
 		<Unit filename="/home/yirat/Desktop/OS-final_task/process_layout_q.c">
+			<Option target="fwork_315081422"/>
+		</Unit>
+		<Unit filename="/home/yirat/Desktop/OS-final_task/server.c">
 			<Option target="fwork_315081422"/>
 		</Unit>
 		<Unit filename="/home/yirat/Desktop/OS-final_task/CMakeLists.txt">
