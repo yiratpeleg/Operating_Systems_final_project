@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/yirat/Desktop/fwork_315081422/main.c" "/home/yirat/Desktop/fwork_315081422/cmake-build-debug/CMakeFiles/fwork_315081422.dir/main.c.o"
-  "/home/yirat/Desktop/fwork_315081422/process_layout_q.c" "/home/yirat/Desktop/fwork_315081422/cmake-build-debug/CMakeFiles/fwork_315081422.dir/process_layout_q.c.o"
+  "/home/yirat/Desktop/OS-final_task/main.c" "/home/yirat/Desktop/OS-final_task/cmake-build-debug/CMakeFiles/fwork_315081422.dir/main.c.o"
+  "/home/yirat/Desktop/OS-final_task/process_layout_q.c" "/home/yirat/Desktop/OS-final_task/cmake-build-debug/CMakeFiles/fwork_315081422.dir/process_layout_q.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

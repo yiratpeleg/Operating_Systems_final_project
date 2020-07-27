@@ -1,4 +1,4 @@
-# Install script for directory: /home/yirat/Desktop/fwork_315081422
+# Install script for directory: /home/yirat/Desktop/OS-final_task
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/yirat/Desktop/fwork_315081422/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/yirat/Desktop/OS-final_task/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
