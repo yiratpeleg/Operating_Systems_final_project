@@ -76,6 +76,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/yirat/Desktop/OS-final_task/check_pid.c">
+			<Option target="fwork_315081422"/>
+		</Unit>
 		<Unit filename="/home/yirat/Desktop/OS-final_task/main.c">
 			<Option target="fwork_315081422"/>
 		</Unit>
