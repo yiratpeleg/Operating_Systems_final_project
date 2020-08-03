@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/yirat/Desktop/OS-final_task/main.c" "/home/yirat/Desktop/OS-final_task/cmake-build-debug/CMakeFiles/fwork_315081422.dir/main.c.o"
   "/home/yirat/Desktop/OS-final_task/process_layout_q.c" "/home/yirat/Desktop/OS-final_task/cmake-build-debug/CMakeFiles/fwork_315081422.dir/process_layout_q.c.o"
   "/home/yirat/Desktop/OS-final_task/server.c" "/home/yirat/Desktop/OS-final_task/cmake-build-debug/CMakeFiles/fwork_315081422.dir/server.c.o"
+  "/home/yirat/Desktop/OS-final_task/set_policy.c" "/home/yirat/Desktop/OS-final_task/cmake-build-debug/CMakeFiles/fwork_315081422.dir/set_policy.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -258,6 +258,33 @@ server.c.s:
 	$(MAKE) -f CMakeFiles/fwork_315081422.dir/build.make CMakeFiles/fwork_315081422.dir/server.c.s
 .PHONY : server.c.s
 
+set_policy.o: set_policy.c.o
+
+.PHONY : set_policy.o
+
+# target to build an object file
+set_policy.c.o:
+	$(MAKE) -f CMakeFiles/fwork_315081422.dir/build.make CMakeFiles/fwork_315081422.dir/set_policy.c.o
+.PHONY : set_policy.c.o
+
+set_policy.i: set_policy.c.i
+
+.PHONY : set_policy.i
+
+# target to preprocess a source file
+set_policy.c.i:
+	$(MAKE) -f CMakeFiles/fwork_315081422.dir/build.make CMakeFiles/fwork_315081422.dir/set_policy.c.i
+.PHONY : set_policy.c.i
+
+set_policy.s: set_policy.c.s
+
+.PHONY : set_policy.s
+
+# target to generate assembly for a file
+set_policy.c.s:
+	$(MAKE) -f CMakeFiles/fwork_315081422.dir/build.make CMakeFiles/fwork_315081422.dir/set_policy.c.s
+.PHONY : set_policy.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -282,6 +309,9 @@ help:
 	@echo "... server.o"
 	@echo "... server.i"
 	@echo "... server.s"
+	@echo "... set_policy.o"
+	@echo "... set_policy.i"
+	@echo "... set_policy.s"
 .PHONY : help
 
 

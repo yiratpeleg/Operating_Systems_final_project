@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/fwork_315081422.dir/main.c.o"
   "CMakeFiles/fwork_315081422.dir/process_layout_q.c.o"
   "CMakeFiles/fwork_315081422.dir/server.c.o"
+  "CMakeFiles/fwork_315081422.dir/set_policy.c.o"
   "fwork_315081422"
   "fwork_315081422.pdb"
 )

@@ -91,6 +91,9 @@
 		<Unit filename="/home/yirat/Desktop/OS-final_task/server.c">
 			<Option target="fwork_315081422"/>
 		</Unit>
+		<Unit filename="/home/yirat/Desktop/OS-final_task/set_policy.c">
+			<Option target="fwork_315081422"/>
+		</Unit>
 		<Unit filename="/home/yirat/Desktop/OS-final_task/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
