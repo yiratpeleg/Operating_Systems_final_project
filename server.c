@@ -5,7 +5,6 @@
 #include <signal.h>
 #include <unistd.h>
 
-SIGRTMAX
 int counter = 0;
 
 void sigint_handler(int sig){

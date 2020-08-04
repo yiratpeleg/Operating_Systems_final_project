@@ -82,6 +82,9 @@
 		<Unit filename="/home/yirat/Desktop/OS-final_task/client.c">
 			<Option target="fwork_315081422"/>
 		</Unit>
+		<Unit filename="/home/yirat/Desktop/OS-final_task/dir_traversal.c">
+			<Option target="fwork_315081422"/>
+		</Unit>
 		<Unit filename="/home/yirat/Desktop/OS-final_task/main.c">
 			<Option target="fwork_315081422"/>
 		</Unit>
