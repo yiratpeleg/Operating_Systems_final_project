@@ -1,0 +1,23 @@
+HOW TO COMPILE AND RUN THE PROGRAM:
+
+TO COMPILE:
+
+There are 3 options:
+1. make
+2. make all
+3. make dir_traversal
+
+All options will compile the dir_traversal.c program.
+
+After compiling we get a execution file named dir_traversal.
+
+TO RUN:
+
+You need to run the following command:
+
+./dir_traversal <Path_of_directory>
+
+To remove the check_pid file you need to run the following command:
+
+make clean
+
