@@ -1,0 +1,22 @@
+
+HOW TO COMPILE AND RUN THE PROGRAM:
+
+TO COMPILE:
+
+There are 3 options:
+1. make
+2. make all
+3. make check_pid
+
+All options will compile the check_pid.c program.
+After compiling we get a execution file named check_pid.
+
+TO RUN:
+
+You need to run the following command:
+
+./check_pid <number_of_pid>
+
+To remove the check_pid file you need to run the following command:
+
+make clean 
