@@ -1,4 +1,3 @@
-
 HOW TO COMPILE AND RUN THE PROGRAM:
 
 TO COMPILE:
@@ -9,6 +8,7 @@ There are 3 options:
 3. make check_pid
 
 All options will compile the check_pid.c program.
+
 After compiling we get a execution file named check_pid.
 
 TO RUN:

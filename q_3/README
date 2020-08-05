@@ -1,0 +1,26 @@
+HOW TO COMPILE AND RUN THE PROGRAM:
+
+TO COMPILE:
+
+There are 3 options:
+1. make
+2. make all
+3. make set_policy
+
+All options will compile the set_policy.c program.
+
+After compiling we get a execution file named set_policy.
+
+TO RUN:
+
+You need to run the following command:
+
+./set_policy <number_of_policy> <number_of_priority>
+
+After that you will get the pid of the process.
+You need to press Enter to make the changes. 
+Finally, to end the program, you need to enter 0.
+
+To remove the set_policy file you need to run the following command:
+
+make clean 
