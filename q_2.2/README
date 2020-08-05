@@ -1,0 +1,22 @@
+
+HOW TO COMPILE AND RUN THE PROGRAM:
+
+TO COMPILE:
+
+There are 3 options:
+1. make client - Will compile the client.c program and get a execution file named client.
+2. make server - Will compile the server.c program and get a execution file named sserver.
+3. make/make all - Will compile the client.c and server.c programs and get two execution files named client and server.
+
+TO RUN:
+
+To run the client, you need to run the following command:
+./client <number_of_server> <number_of_signal> <number_of times>
+
+To run the server, you need to run the following command:
+./server
+
+To kill the server, you need enter a char or us kill -9 <number_of_server>
+
+To remove the client and server files you need to run the following command:
+make clean

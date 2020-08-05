@@ -38,21 +38,30 @@ int main(int argc , char* argv []){
     printf("pid:%d",getpid());                    // TO CHECK THE CHANGES
     getchar();
     int sched = atoi(argv[1]);
-    struct sched_param priority;
     int pri = atoi(argv[2]);
-    priority.sched_priority=pri;
     if(sched==SCHED_DEADLINE){
         struct sched_attr p;
-        p.sched_priority
-        p.sched_deadline
-        p.sched_flags
-        p.sched_nice
-        p.sched_period
-        p.sched_policy
-        p.sched_runtime
-        p.size
+        p.sched_priority = pri;
+        p.sched_deadline = 30*1000*100;
+        p.sched_flags = 0;
+        p.sched_nice = 0;
+        p.sched_period = 30*1000*100;
+        p.sched_policy = SCHED_DEADLINE;
+        p.sched_runtime = 10*1000*100;
+        p.size = sizeof(p);
+      if(sched_setattr(0,&p,0)==-1){
+          perror("The change was failed");
+          exit(-1);
+      }
     }
-    sched_setscheduler(0 , sched , &priority);
+    else {
+        struct sched_param priority;
+        priority.sched_priority = pri;
+        if(sched_setscheduler(0, sched, &priority)==-1){
+            perror("The change was failed");
+            exit(-1);
+        }
+    }
     printf("The policy and priority of process %d has changed",getpid());
     int stop =1;
     while(stop){
