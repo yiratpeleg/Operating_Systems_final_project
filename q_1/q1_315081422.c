@@ -38,4 +38,6 @@ main(int argc, char* argv[])    /* 8. text-code segment */
     doCalc(key);
 
     exit(EXIT_SUCCESS);
+
+
 }
