@@ -17,6 +17,13 @@ You need to run the following command:
 
 ./set_policy <number_of_policy> <number_of_priority>
 
+The range of values of policy and priority:
+The priority of SCHED_OTHER(0) policy is 0
+The priority of SCHED_IDLE(5) policy is 0
+The priority of SCHED_DEADLINE(6) policy is 0
+The priority of SCHED_RR(2) policy is between 1 - 99
+The priority of SCHED_FIFO(1) policy is between 1 - 99
+
 After that you will get the pid of the process.
 You need to press Enter to make the changes. 
 Finally, to end the program, you need to enter 0.

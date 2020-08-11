@@ -35,6 +35,9 @@ static int sched_setattr (pid_t pid, const struct sched_attr *attr, unsigned int
  * @return
  */
 int main(int argc , char* argv []){
+
+    printf("%d \t %d \t %d \t %d \t %d \t ",SCHED_DEADLINE,SCHED_FIFO,SCHED_IDLE,SCHED_OTHER,SCHED_RR);
+
     printf("pid:%d",getpid());                    // TO CHECK THE CHANGES
     getchar();
     int sched = atoi(argv[1]);
@@ -67,5 +70,6 @@ int main(int argc , char* argv []){
     while(stop){
         scanf("%d",&stop);
     }
+
 }
 
