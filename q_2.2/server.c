@@ -16,8 +16,14 @@ void sigusr1_handler(int sig){
 }
 
 int main(){
-    signal(SIGINT , sigint_handler);
-    signal(SIGUSR1 , sigusr1_handler);
+    if(signal(SIGINT , sigint_handler)==SIG_ERR){
+        printf("Signal handler failed");
+        return -1;
+    }
+    if(signal(SIGUSR1 , sigusr1_handler)==SIG_ERR){
+        printf("Signal handler failed");
+        return -1;
+    }
     printf("The server pid is: %d\n" , getpid());
     getchar();
     return 0;

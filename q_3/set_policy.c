@@ -36,40 +36,42 @@ static int sched_setattr (pid_t pid, const struct sched_attr *attr, unsigned int
  */
 int main(int argc , char* argv []){
 
-    printf("%d \t %d \t %d \t %d \t %d \t ",SCHED_DEADLINE,SCHED_FIFO,SCHED_IDLE,SCHED_OTHER,SCHED_RR);
-
-    printf("pid:%d",getpid());                    // TO CHECK THE CHANGES
-    getchar();
-    int sched = atoi(argv[1]);
-    int pri = atoi(argv[2]);
-    if(sched==SCHED_DEADLINE){
-        struct sched_attr p;
-        p.sched_priority = pri;
-        p.sched_deadline = 30*1000*100;
-        p.sched_flags = 0;
-        p.sched_nice = 0;
-        p.sched_period = 30*1000*100;
-        p.sched_policy = SCHED_DEADLINE;
-        p.sched_runtime = 10*1000*100;
-        p.size = sizeof(p);
-      if(sched_setattr(0,&p,0)==-1){
-          perror("The change was failed");
-          exit(-1);
-      }
-    }
-    else {
-        struct sched_param priority;
-        priority.sched_priority = pri;
-        if(sched_setscheduler(0, sched, &priority)==-1){
-            perror("The change was failed");
-            exit(-1);
+    if(argc==3) {
+        printf("pid:%d", getpid());                    // TO CHECK THE CHANGES
+        getchar();
+        int sched = atoi(argv[1]);
+        int pri = atoi(argv[2]);
+        if (sched == SCHED_DEADLINE) {
+            struct sched_attr p;
+            p.sched_priority = pri;
+            p.sched_deadline = 30 * 1000 * 100;
+            p.sched_flags = 0;
+            p.sched_nice = 0;
+            p.sched_period = 30 * 1000 * 100;
+            p.sched_policy = SCHED_DEADLINE;
+            p.sched_runtime = 10 * 1000 * 100;
+            p.size = sizeof(p);
+            if (sched_setattr(0, &p, 0) == -1) {
+                perror("The change was failed");
+                exit(-1);
+            }
+        } else {
+            struct sched_param priority;
+            priority.sched_priority = pri;
+            if (sched_setscheduler(0, sched, &priority) == -1) {
+                perror("The change was failed");
+                exit(-1);
+            }
+        }
+        printf("The policy and priority of process %d has changed", getpid());
+        int stop = 1;
+        while (stop) {
+            scanf("%d", &stop);
         }
     }
-    printf("The policy and priority of process %d has changed",getpid());
-    int stop =1;
-    while(stop){
-        scanf("%d",&stop);
+    else{
+        printf("Please enter valid arguments");
     }
-
+    return 0;
 }
 

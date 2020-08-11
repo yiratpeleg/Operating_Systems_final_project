@@ -17,7 +17,9 @@ You need to run the following command:
 
 ./dir_traversal <Path_of_directory>
 
-To remove the check_pid file you need to run the following command:
+NOTE: If you don't enter a path, the default path is the current directory.
+
+To remove the dir_traversal file you need to run the following command:
 
 make clean
 

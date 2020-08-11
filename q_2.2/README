@@ -10,13 +10,19 @@ There are 3 options:
 
 TO RUN:
 
-To run the client, you need to run the following command:
-./client <number_of_server> <number_of_signal> <number_of times>
+You need to open two terminals. one for client and one for server.
 
 To run the server, you need to run the following command:
 ./server
 
-To kill the server, you need enter a char or us kill -9 <number_of_server>
+After you run the server, the server's pid will be printed on the screen so that when you run the client you will know which pid to enter.
+
+To run the client, you need to run the following command:
+./client <pid_of_server> <number_of_signal> <number_of_times>
+
+NOTE: In our program, the number of signal must be 2(SIGINT) or 10(SIGUSR1).
+
+To kill the server, you need press enter or use kill -9 <pid_of_server>
 
 To remove the client and server files you need to run the following command:
 make clean

@@ -34,7 +34,6 @@ main(int argc, char* argv[])    /* 8. text-code segment */
     static char mbuf[10240000]; /* 10. BSS-uninitialized data */
     char* p;                    /* 11. stack frame of main function */
 
-
     doCalc(key);
 
     exit(EXIT_SUCCESS);
