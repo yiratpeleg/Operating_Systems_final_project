@@ -32,7 +32,9 @@ main(int argc, char* argv[])    /* 8. text-code segment */
 {
     static int key = 9973;      /* 9. initialized data */
     static char mbuf[10240000]; /* 10. BSS-uninitialized data */
-    char* p;                    /* 11. stack frame of main function */
+    char* p;                    /* 11. p is not allocated any space in memory because it is not initialized during the program.
+	                            If it was initialized, it would be allocated space in the stack frame of main function.
+	                            (Because the compiler has certain optimizations) */
 
     doCalc(key);
 
